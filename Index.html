@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>My Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mohammed Abdul Numan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mohammed Abdul Numan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/numan-profile.png" alt="Aditya More profile picture" class="main_pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I,m</p>
+            <h1 class="title">Mohammed Abdul Numan</h1>
+            <p class="section__text__p2">Full Stack Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/abdul-numan-7a1390229/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/Abdulnuman009'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/numan-profile.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>BE in Information Technology<br>Graduated in 2024</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years</p>
+                        <p>Software Developer Intern at Neural Labs</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a recent IT graduate with an excellent CGPA of 8.88. Passionate about technology and problem-solving, 
+                    I have hands-on experience in software development, gained through internships and projects. I am eager to 
+                    explore new challenges and contribute to innovative solutions in the tech industry.</p>
+                </div>
+            </div>
+        </div>   
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>    
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+    
+        <!-- Experience Cards -->
+        <div class="experience-cards">
+            <div class="experience-card">
+                <h3>Software Developer Intern</h3>
+                <p class="company"><strong>Company:</strong> Neural Labs</p>
+                <p class="duration"><strong>Duration:</strong> Feb 2024 - Present</p>
+                <p class="description">Developed an authentication system with login, registration, and password recovery using React.js and integrated Firestore for secure data management.</p>
+            </div>
+            <div class="experience-card">
+                <h3>Web Developer Intern</h3>
+                <p class="company"><strong>Company:</strong> Bolt IoT</p>
+                <p class="duration"><strong>Duration:</strong> Dec 2023 - Feb 2024</p>
+                <p class="description">Collaborated on building a dynamic e-commerce platform using React.js, enhancing user experience with interactive features and responsive design.</p>
+            </div>
+        </div>
+    
+        <!-- Skills Section -->
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/react-logo.png" alt="React JS Logo" class="icon">
+                            <div>
+                                <h4>React JS</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/python-logo.png" alt="Python Logo" class="icon"> 
+                            <div>
+                                <h4>Python</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/js-logo.png" alt="JavaScript Logo" class="icon"> 
+                            <div>
+                                <h4>JavaScript</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/java-logo.png" alt="Java Logo" class="icon"> 
+                            <div>
+                                <h4>Java (OOPS)</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mongodb-logo.png" alt="MongoDB Logo" class="icon">
+                            <div>
+                                <h4>MongoDB</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/firestore-logo.png" alt="Firestore DB Logo" class="icon"> 
+                            <div>
+                                <h4>Firestore DB</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/sql-logo.png" alt="SQL Logo" class="icon"> 
+                            <div>
+                                <h4>SQL</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/rest-api-logo.png" alt="REST APIs Logo" class="icon"> 
+                            <div>
+                                <h4>REST APIs</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/gcp-logo.png" alt="Google Cloud Platform Logo" class="icon"> 
+                            <div>
+                                <h4>Google Cloud Platform</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/data-structures-logo.png" alt="Data Structures Logo" class="icon"> 
+                            <div>
+                                <h4>Data Structures</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/machine-learning-logo.png" alt="Machine Learning Logo" class="icon"> 
+                            <div>
+                                <h4>Machine Learning</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/material-ui-logo.png" alt="Material UI Logo" class="icon"> 
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+        </div>
+    </section>    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/book-project.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Book Recommender System App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Abdulnuman009/Book-Recommender-System'">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Abdulnuman009/Book-Recommender-System'">Live
+                            Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/sms-span1.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">SMS Spam Detector</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Abdulnuman009/SMS-Spam-Detection'">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://sms-spam-detection-gsl4ko2kb4y33uhysnebjq.streamlit.app/'">Live
+                            Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/shopsmart.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">ShopSmart - An E-Commerce Web App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Abdulnuman009/React-Ecommerce-ShopSmart'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://react-ecommerce-shop-smart.vercel.app/'">Live
+                            Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:abdulnuman009@gmail.com">abdulnuman009@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/abdul-numan-7a1390229/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/whatsapp.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://wa.me/917780452257?text=">WhatsApp</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Mohammed Abdul Numan. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
