@@ -1,294 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <title>My Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Mohammed Abdul Numan — Full Stack & Cloud Engineer specializing in React.js, FastAPI, GCP, AWS, and AI-integrated systems."/>
+<meta name="keywords" content="Mohammed Abdul Numan, Full Stack Engineer, Cloud Engineer, React, FastAPI, GCP, AWS, AI, Hyderabad"/>
+<meta property="og:title" content="Mohammed Abdul Numan — Full Stack & Cloud Engineer"/>
+<meta property="og:description" content="Building scalable cloud-native systems, AI-integrated platforms, and secure multi-tenant architectures."/>
+<meta property="og:type" content="website"/>
+<title>Mohammed Abdul Numan — Full Stack & Cloud Engineer</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/animations.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
 </head>
-
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Mohammed Abdul Numan</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Mohammed Abdul Numan</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/numan-profile.png" alt="Aditya More profile picture" class="main_pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I,m</p>
-            <h1 class="title">Mohammed Abdul Numan</h1>
-            <p class="section__text__p2">Full Stack Software Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download
-                    CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/abdul-numan-7a1390229/'">
-                <img src="./assets/github.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/Abdulnuman009'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/numan-profile.png" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>BE in Information Technology<br>Graduated in 2024</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>1+ years</p>
-                        <p>Software Developer Intern at Neural Labs</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I am a recent IT graduate with an excellent CGPA of 8.88. Passionate about technology and problem-solving, 
-                    I have hands-on experience in software development, gained through internships and projects. I am eager to 
-                    explore new challenges and contribute to innovative solutions in the tech industry.</p>
-                </div>
-            </div>
-        </div>   
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
-    </section>    
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-    
-        <!-- Experience Cards -->
-        <div class="experience-cards">
-            <div class="experience-card">
-                <h3>Software Developer Intern</h3>
-                <p class="company"><strong>Company:</strong> Neural Labs</p>
-                <p class="duration"><strong>Duration:</strong> Feb 2024 - Present</p>
-                <p class="description">Developed an authentication system with login, registration, and password recovery using React.js and integrated Firestore for secure data management.</p>
-            </div>
-            <div class="experience-card">
-                <h3>Web Developer Intern</h3>
-                <p class="company"><strong>Company:</strong> Bolt IoT</p>
-                <p class="duration"><strong>Duration:</strong> Dec 2023 - Feb 2024</p>
-                <p class="description">Collaborated on building a dynamic e-commerce platform using React.js, enhancing user experience with interactive features and responsive design.</p>
-            </div>
-        </div>
-    
-        <!-- Skills Section -->
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/react-logo.png" alt="React JS Logo" class="icon">
-                            <div>
-                                <h4>React JS</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/python-logo.png" alt="Python Logo" class="icon"> 
-                            <div>
-                                <h4>Python</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/js-logo.png" alt="JavaScript Logo" class="icon"> 
-                            <div>
-                                <h4>JavaScript</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/java-logo.png" alt="Java Logo" class="icon"> 
-                            <div>
-                                <h4>Java (OOPS)</h4>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/mongodb-logo.png" alt="MongoDB Logo" class="icon">
-                            <div>
-                                <h4>MongoDB</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/firestore-logo.png" alt="Firestore DB Logo" class="icon"> 
-                            <div>
-                                <h4>Firestore DB</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/sql-logo.png" alt="SQL Logo" class="icon"> 
-                            <div>
-                                <h4>SQL</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/rest-api-logo.png" alt="REST APIs Logo" class="icon"> 
-                            <div>
-                                <h4>REST APIs</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/gcp-logo.png" alt="Google Cloud Platform Logo" class="icon"> 
-                            <div>
-                                <h4>Google Cloud Platform</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/data-structures-logo.png" alt="Data Structures Logo" class="icon"> 
-                            <div>
-                                <h4>Data Structures</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/machine-learning-logo.png" alt="Machine Learning Logo" class="icon"> 
-                            <div>
-                                <h4>Machine Learning</h4>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/material-ui-logo.png" alt="Material UI Logo" class="icon"> 
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-        </div>
-    </section>    
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/book-project.jpg" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Book Recommender System App</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Abdulnuman009/Book-Recommender-System'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Abdulnuman009/Book-Recommender-System'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/sms-span1.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">SMS Spam Detector</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Abdulnuman009/SMS-Spam-Detection'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://sms-spam-detection-gsl4ko2kb4y33uhysnebjq.streamlit.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/shopsmart.png" alt="Project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">ShopSmart - An E-Commerce Web App</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Abdulnuman009/React-Ecommerce-ShopSmart'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://react-ecommerce-shop-smart.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:abdulnuman009@gmail.com">abdulnuman009@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/abdul-numan-7a1390229/">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/whatsapp.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://wa.me/917780452257?text=">WhatsApp</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Mohammed Abdul Numan. All Rights Reserved.</p>
-    </footer>
 
-    <script src="script.js"></script>
+<!-- CUSTOM CURSOR (desktop only) -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- BG EFFECTS -->
+<div class="grid-bg"></div>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">MAN<span>.</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#architecture" class="nav-link">Architecture</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#learning" class="nav-link">Learning</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank" class="btn btn-sm">Resume ↓</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1>
+        Mohammed<br/>
+        Abdul <span class="italic">Numan</span>
+      </h1>
+
+      <div class="hero-title-tag">
+        <span>Full Stack &amp; Cloud Engineer</span>
+        <span class="hero-title-sep">·</span>
+        <span>AI &amp; Data Systems</span>
+      </div>
+
+      <p class="hero-sub">
+        <span id="typed-sub"></span><span class="cursor-blink">|</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View my work →</a>
+        <a href="#contact" class="btn btn-outline">Let's connect</a>
+        <a href="resume.pdf" target="_blank" class="btn btn-ghost">Resume ↓</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">8<span>+</span></div>
+          <div class="stat-label">Cloud Services</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">60<span>%</span></div>
+          <div class="stat-label">Debug Time Reduced</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">8.88</div>
+          <div class="stat-label">CGPA · Osmania</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating tech badges -->
+    <div class="hero-badges" aria-hidden="true">
+      <div class="tech-badge badge-1">React.js</div>
+      <div class="tech-badge badge-2">FastAPI</div>
+      <div class="tech-badge badge-3">AWS</div>
+      <div class="tech-badge badge-4">GCP</div>
+      <div class="tech-badge badge-5">OpenAI</div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background: var(--surface);">
+  <div class="container">
+    <div class="section-label reveal">Experience</div>
+    <h2 class="section-title reveal">Where I've <em>worked</em></h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="tl-accent"></div>
+        <div class="tl-top">
+          <div>
+            <div class="tl-role">Software Developer</div>
+            <div class="tl-company">NeuralLabs Pvt Ltd</div>
+            <span class="tl-badge">Full-time</span>
+          </div>
+          <div class="tl-meta">
+            <div>Feb 2024 – Present</div>
+            <div>California, US</div>
+          </div>
+        </div>
+        <ul class="tl-bullets">
+          <li>Built and optimized a secure <strong>multi-tenant enterprise platform</strong> with RBAC, authentication, and audit logging using <strong>React.js, FastAPI, Firestore, and MongoDB</strong>.</li>
+          <li>Designed and automated deployments on <strong>Google Cloud Platform</strong> (Compute Engine, GCS, SSL) using Nginx, Gunicorn, and Uvicorn — improving workflow reliability.</li>
+          <li>Integrated <strong>OpenTelemetry + Grafana</strong> for distributed tracing and real-time observability, reducing debugging and incident resolution time by <strong>~60%</strong>.</li>
+          <li>Integrated <strong>OpenAI and Claude APIs</strong> into production pipelines to power intelligent assistants and automate system queries.</li>
+          <li>Improved authentication performance by <strong>~40%</strong> using Redis (GCP Memorystore) for token caching and session acceleration.</li>
+          <li>Built <strong>ETL pipelines and Looker dashboards</strong> with BigQuery for platform analytics and business intelligence.</li>
+          <li>Designed scalable database schemas across <strong>Firestore, MongoDB, and SQL</strong> — improving query performance and security in multi-tenant environments.</li>
+        </ul>
+        <div class="tl-stack">
+          <span class="tag">React.js</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">GCP</span>
+          <span class="tag">Redis</span>
+          <span class="tag">OpenTelemetry</span>
+          <span class="tag">Grafana</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">Claude AI</span>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-intern reveal reveal-delay-1">
+        <div class="tl-accent tl-accent-gold"></div>
+        <div class="tl-top">
+          <div>
+            <div class="tl-role">Data Analyst Intern</div>
+            <div class="tl-company tl-company-gold">DataBeat</div>
+            <span class="tl-badge tl-badge-gold">Internship · Received FT Offer</span>
+          </div>
+          <div class="tl-meta">
+            <div>Jun 2024 – Aug 2024</div>
+            <div>Hyderabad, India</div>
+          </div>
+        </div>
+        <ul class="tl-bullets tl-bullets-gold">
+          <li>Designed and optimized <strong>SQL/BigQuery</strong> queries to clean and analyze large-scale datasets.</li>
+          <li>Built interactive <strong>Looker Studio dashboards</strong> supporting real-time reporting and business decision tracking.</li>
+          <li>Automated recurring reporting workflows using <strong>Python and Apps Script</strong>, reducing manual effort by ~70%.</li>
+          <li>Received a <strong>full-time offer</strong> based on strong performance and impact during internship.</li>
+        </ul>
+        <div class="tl-stack">
+          <span class="tag">SQL</span>
+          <span class="tag">BigQuery</span>
+          <span class="tag">Looker Studio</span>
+          <span class="tag">Python</span>
+          <span class="tag">Apps Script</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label reveal">Skills</div>
+    <h2 class="section-title reveal">What I <em>work with</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-card-icon" style="background:rgba(0,229,255,.1);">⚛️</div>
+        <div class="skill-card-title">Frontend</div>
+        <div class="skill-tags">
+          <span class="tag">React.js</span>
+          <span class="tag">JavaScript ES6+</span>
+          <span class="tag">Material UI</span>
+          <span class="tag">HTML5 / CSS3</span>
+          <span class="tag">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon" style="background:rgba(124,58,237,.1);">🔧</div>
+        <div class="skill-card-title">Backend</div>
+        <div class="skill-tags">
+          <span class="tag">FastAPI</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Python</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">WebSockets</span>
+          <span class="tag">Redis</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-icon" style="background:rgba(240,180,41,.1);">🗄️</div>
+        <div class="skill-card-title">Databases</div>
+        <div class="skill-tags">
+          <span class="tag">Firestore</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">BigQuery</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-icon" style="background:rgba(255,153,0,.1);">☁️</div>
+        <div class="skill-card-title">AWS Cloud</div>
+        <div class="skill-tags">
+          <span class="tag tag-aws">EC2</span>
+          <span class="tag tag-aws">S3</span>
+          <span class="tag tag-aws">VPC</span>
+          <span class="tag tag-aws">IAM</span>
+          <span class="tag tag-aws">Route53</span>
+          <span class="tag tag-aws">Security Groups</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon" style="background:rgba(66,133,244,.1);">🌐</div>
+        <div class="skill-card-title">GCP & DevOps</div>
+        <div class="skill-tags">
+          <span class="tag">Compute Engine</span>
+          <span class="tag">GCS</span>
+          <span class="tag">Memorystore</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Nginx</span>
+          <span class="tag">Gunicorn</span>
+          <span class="tag">Certbot / SSL</span>
+          <span class="tag">Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-icon" style="background:rgba(0,229,255,.1);">📡</div>
+        <div class="skill-card-title">Observability & AI</div>
+        <div class="skill-tags">
+          <span class="tag">OpenTelemetry</span>
+          <span class="tag">Grafana</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Claude AI</span>
+          <span class="tag">ETL Pipelines</span>
+          <span class="tag">Looker Studio</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE / SYSTEM DESIGN -->
+<section id="architecture" style="background: var(--surface);">
+  <div class="container">
+    <div class="section-label reveal">System Design</div>
+    <h2 class="section-title reveal">Systems I <em>design & deploy</em></h2>
+
+    <div class="arch-grid">
+
+      <div class="arch-card reveal">
+        <div class="arch-badge">Architecture</div>
+        <div class="arch-title">Multi-Tenant Enterprise Platform</div>
+        <p class="arch-desc">Secure RBAC-enabled enterprise platform supporting multiple organizations with tenant isolation, AI integrations, distributed caching, and cloud deployments.</p>
+        <div class="arch-diagram">
+          <div class="arch-layer arch-layer-1">
+            <span class="arch-node">React.js Frontend</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-2">
+            <span class="arch-node">FastAPI · RBAC · Auth</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-3">
+            <span class="arch-node">Redis Cache</span>
+            <span class="arch-separator">·</span>
+            <span class="arch-node">OpenTelemetry</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-4">
+            <span class="arch-node">Firestore</span>
+            <span class="arch-separator">·</span>
+            <span class="arch-node">MongoDB</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-5">
+            <span class="arch-node">OpenAI · Claude APIs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-card reveal reveal-delay-1">
+        <div class="arch-badge arch-badge-gold">Deployment</div>
+        <div class="arch-title">Cloud Deployment Infrastructure</div>
+        <p class="arch-desc">End-to-end deployment pipelines on GCP and AWS with VM provisioning, DNS routing, SSL/TLS termination, and reverse proxy orchestration.</p>
+        <div class="arch-diagram">
+          <div class="arch-layer arch-layer-1">
+            <span class="arch-node">Domain · Route53 / Cloudflare</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-2">
+            <span class="arch-node">SSL/TLS · Certbot</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-3">
+            <span class="arch-node">Nginx Reverse Proxy</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-4">
+            <span class="arch-node">Gunicorn · Uvicorn</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-5">
+            <span class="arch-node">GCP Compute · AWS EC2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-card reveal reveal-delay-2">
+        <div class="arch-badge arch-badge-purple">Observability</div>
+        <div class="arch-title">Distributed Observability Stack</div>
+        <p class="arch-desc">Production-grade observability setup with distributed tracing, metrics collection, and real-time dashboards — reducing incident resolution time by 60%.</p>
+        <div class="arch-diagram">
+          <div class="arch-layer arch-layer-1">
+            <span class="arch-node">FastAPI Services</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-2">
+            <span class="arch-node">OpenTelemetry SDK</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-3">
+            <span class="arch-node">OTLP Collector</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-4">
+            <span class="arch-node">Grafana Dashboards</span>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer arch-layer-5">
+            <span class="arch-node">Alerts · Tracing · Metrics</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label reveal">Projects</div>
+    <h2 class="section-title reveal">Things I've <em>shipped</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-title">Cloud-Based Scalable E-Commerce Platform</div>
+        <div class="project-date">Jun 2023 – Aug 2023</div>
+        <p class="project-desc">Full-stack e-commerce system with hybrid storage combining relational and document databases. Designed for scalable product catalogs, cart management, and user flows with optimized query performance.</p>
+        <div class="project-stack">
+          <span class="tag">React.js</span>
+          <span class="tag">MUI</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Abdulnuman009" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">02</div>
+        <div class="project-title">Real-Time Collaborative Code Editor</div>
+        <div class="project-date">Jan 2024 – Feb 2024</div>
+        <p class="project-desc">Multi-user collaborative code editing with real-time sync, optimized for low-latency communication via WebSocket and Redis pub/sub with MongoDB indexing for persistent session history.</p>
+        <div class="project-stack">
+          <span class="tag">React.js</span>
+          <span class="tag">WebSockets</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Redis</span>
+          <span class="tag">MongoDB</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Abdulnuman009" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card project-card-featured reveal reveal-delay-2">
+        <div class="project-featured-label">Enterprise · Production</div>
+        <div class="project-num">03</div>
+        <div class="project-title">AI-Integrated Enterprise Platform</div>
+        <div class="project-date">Feb 2024 – Present · NeuralLabs</div>
+        <p class="project-desc">Production multi-tenant SaaS platform with RBAC, distributed observability using OpenTelemetry + Grafana, Redis caching, and OpenAI/Claude AI integrations. Deployed on GCP with Nginx, SSL, and automated pipelines.</p>
+        <div class="project-stack">
+          <span class="tag">React.js</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">GCP</span>
+          <span class="tag">Redis</span>
+          <span class="tag">OpenTelemetry</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Firestore</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CURRENTLY LEARNING -->
+<section id="learning" style="background: var(--surface);">
+  <div class="container">
+    <div class="section-label reveal">Currently Exploring</div>
+    <h2 class="section-title reveal">What I'm <em>learning now</em></h2>
+
+    <!-- AWS SA Banner -->
+    <div class="learning-banner reveal">
+      <div class="learning-banner-icon">☁️</div>
+      <div class="learning-banner-content">
+        <div class="learning-banner-title">AWS Solutions Architect – Associate</div>
+        <div class="learning-banner-sub">Actively preparing for AWS SAA-C03 certification · Studying architecture patterns, HA design, cost optimisation, and security best practices across 15+ AWS services.</div>
+      </div>
+      <div class="learning-banner-badge">SAA-C03</div>
+    </div>
+
+    <div class="learning-grid">
+
+      <!-- Card 1: Networking & Compute -->
+      <div class="learning-card reveal">
+        <div class="learning-icon">🌐</div>
+        <div class="learning-title">Networking &amp; Compute</div>
+        <p class="learning-desc">Designing resilient VPC architectures with public/private subnets, NAT gateways, internet gateways, and route tables. Running EC2 instances with launch templates, Auto Scaling Groups, and load balancers for HA workloads.</p>
+        <div class="learning-tags">
+          <span class="tag tag-aws">VPC</span>
+          <span class="tag tag-aws">Subnets</span>
+          <span class="tag tag-aws">NAT Gateway</span>
+          <span class="tag tag-aws">Internet Gateway</span>
+          <span class="tag tag-aws">EC2</span>
+          <span class="tag tag-aws">Auto Scaling</span>
+          <span class="tag tag-aws">ELB / ALB</span>
+          <span class="tag tag-aws">Security Groups</span>
+          <span class="tag tag-aws">NACLs</span>
+        </div>
+        <div class="learning-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 70%"></div>
+          </div>
+          <span class="progress-label">Strong</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Storage & Databases -->
+      <div class="learning-card reveal reveal-delay-1">
+        <div class="learning-icon">🗄️</div>
+        <div class="learning-title">Storage &amp; Databases</div>
+        <p class="learning-desc">Managing S3 buckets with versioning, lifecycle policies, presigned URLs, and static hosting. Working with RDS Multi-AZ, Read Replicas, and DynamoDB for scalable managed database solutions.</p>
+        <div class="learning-tags">
+          <span class="tag tag-aws">S3</span>
+          <span class="tag tag-aws">S3 Lifecycle</span>
+          <span class="tag tag-aws">S3 Versioning</span>
+          <span class="tag tag-aws">EBS</span>
+          <span class="tag tag-aws">EFS</span>
+          <span class="tag tag-aws">RDS</span>
+          <span class="tag tag-aws">DynamoDB</span>
+          <span class="tag tag-aws">ElastiCache</span>
+        </div>
+        <div class="learning-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 60%; background: var(--accent3);"></div>
+          </div>
+          <span class="progress-label">In Progress</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Security & IAM -->
+      <div class="learning-card reveal reveal-delay-2">
+        <div class="learning-icon">🔐</div>
+        <div class="learning-title">Security &amp; IAM</div>
+        <p class="learning-desc">Implementing least-privilege IAM policies, roles, and permission boundaries. Securing infrastructure with KMS encryption, Secrets Manager, CloudTrail audit logging, and AWS WAF for edge protection.</p>
+        <div class="learning-tags">
+          <span class="tag tag-aws">IAM Roles</span>
+          <span class="tag tag-aws">IAM Policies</span>
+          <span class="tag tag-aws">KMS</span>
+          <span class="tag tag-aws">Secrets Manager</span>
+          <span class="tag tag-aws">CloudTrail</span>
+          <span class="tag tag-aws">AWS WAF</span>
+          <span class="tag tag-aws">Shield</span>
+          <span class="tag tag-aws">ACM</span>
+        </div>
+        <div class="learning-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 55%; background: var(--accent2);"></div>
+          </div>
+          <span class="progress-label">Active</span>
+        </div>
+      </div>
+
+      <!-- Card 4: DNS, CDN & Routing -->
+      <div class="learning-card reveal">
+        <div class="learning-icon">📡</div>
+        <div class="learning-title">DNS, CDN &amp; Routing</div>
+        <p class="learning-desc">Configuring Route 53 hosted zones with routing policies — latency-based, weighted, failover, and geolocation. Distributing content globally via CloudFront CDN with custom origins and cache behaviours.</p>
+        <div class="learning-tags">
+          <span class="tag tag-aws">Route 53</span>
+          <span class="tag tag-aws">Hosted Zones</span>
+          <span class="tag tag-aws">Routing Policies</span>
+          <span class="tag tag-aws">CloudFront</span>
+          <span class="tag tag-aws">CDN</span>
+          <span class="tag tag-aws">ACM SSL</span>
+          <span class="tag tag-aws">Health Checks</span>
+        </div>
+        <div class="learning-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 65%"></div>
+          </div>
+          <span class="progress-label">Hands-on</span>
+        </div>
+      </div>
+
+      <!-- Card 5: Serverless & App Services -->
+      <div class="learning-card reveal reveal-delay-1">
+        <div class="learning-icon">⚡</div>
+        <div class="learning-title">Serverless &amp; App Services</div>
+        <p class="learning-desc">Exploring event-driven serverless architecture with Lambda functions, API Gateway REST/HTTP APIs, SQS message queues, SNS notifications, and Step Functions for workflow orchestration.</p>
+        <div class="learning-tags">
+          <span class="tag tag-aws">Lambda</span>
+          <span class="tag tag-aws">API Gateway</span>
+          <span class="tag tag-aws">SQS</span>
+          <span class="tag tag-aws">SNS</span>
+          <span class="tag tag-aws">EventBridge</span>
+          <span class="tag tag-aws">Step Functions</span>
+          <span class="tag tag-aws">Elastic Beanstalk</span>
+        </div>
+        <div class="learning-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 45%; background: var(--accent3);"></div>
+          </div>
+          <span class="progress-label">Exploring</span>
+        </div>
+      </div>
+
+      <!-- Card 6: Monitoring & Cost -->
+      <div class="learning-card reveal reveal-delay-2">
+        <div class="learning-icon">📊</div>
+        <div class="learning-title">Monitoring &amp; Cost Optimisation</div>
+        <p class="learning-desc">Setting up CloudWatch alarms, dashboards, and log groups for operational visibility. Using AWS Cost Explorer, Savings Plans, Spot Instances, and Trusted Advisor to design cost-efficient architectures.</p>
+        <div class="learning-tags">
+          <span class="tag tag-aws">CloudWatch</span>
+          <span class="tag tag-aws">CloudWatch Logs</span>
+          <span class="tag tag-aws">AWS Config</span>
+          <span class="tag tag-aws">Cost Explorer</span>
+          <span class="tag tag-aws">Trusted Advisor</span>
+          <span class="tag tag-aws">Savings Plans</span>
+          <span class="tag tag-aws">Spot Instances</span>
+        </div>
+        <div class="learning-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 40%; background: var(--accent2);"></div>
+          </div>
+          <span class="progress-label">Studying</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-label reveal">Education</div>
+    <h2 class="section-title reveal">Academic <em>foundation</em></h2>
+    <div class="edu-grid">
+
+      <div class="edu-card reveal">
+        <div class="edu-year">2020 – 2024</div>
+        <div class="edu-degree">Bachelor of Engineering in IT</div>
+        <div class="edu-school">Osmania University · Hyderabad</div>
+        <span class="edu-score">CGPA: 8.88 / 10</span>
+      </div>
+
+      <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-year">2018 – 2020</div>
+        <div class="edu-degree">Intermediate (MPC)</div>
+        <div class="edu-school">TSBIE · Telangana</div>
+        <span class="edu-score edu-score-gold">97.8%</span>
+      </div>
+
+      <div class="edu-card reveal reveal-delay-2">
+        <div class="edu-year">2026 · In Progress</div>
+        <div class="edu-degree">AWS Solutions Architect – Associate</div>
+        <div class="edu-school">SAA-C03 Certification Track</div>
+        <span class="edu-score edu-score-purple">Active</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background: var(--surface);">
+  <div class="container">
+    <div class="contact-section reveal">
+      <div class="section-label" style="justify-content:center;">Contact</div>
+      <h2 class="contact-title">Let's build <em>something</em> great</h2>
+      <p class="contact-sub">Open to full-time roles, freelance projects, and interesting collaborations. Based in Hyderabad, open to remote worldwide.</p>
+      <div class="contact-links">
+        <a href="mailto:abdulnuman009@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          abdulnuman009@gmail.com
+        </a>
+        <a href="tel:+917780452257" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.07 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+          +91 77804 52257
+        </a>
+        <a href="https://github.com/Abdulnuman009" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          github.com/Abdulnuman009
+        </a>
+        <a href="https://linkedin.com/in/mohammed-abdul-numan-7a1390229/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-logo">MAN<span>.</span></span>
+      <p>© 2026 Mohammed Abdul Numan · Hyderabad, Telangana, India</p>
+      <a href="#home" class="footer-top">↑ Top</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>
